@@ -9,9 +9,9 @@ ver. 0.9.x
 * **Trinity** 3 layouts by 1 code
 
 ### Patterns
-* Solo Single column, for web apps
-* Duo 2 columns, right-sided, for corporate websites
-* Dash 2 columns, left-sided, liquid layout, for admin dashboards
+* **Solo**  Single column, for web apps
+* **Duo** 2 columns, right-sided, for corporate websites
+* **Dash**  2 columns, left-sided, liquid layout, for admin dashboards
 
 ## Versions
 | version | updated | memo |
