@@ -1,0 +1,179 @@
+/**
+ * @file
+ *	Majestic - a sassy cascading style sheet
+ *	
+ *	The grand design of AquaMonte.
+ *	@author	Hikaru Tamaki
+ *	@package	AquaMonte
+ */
+
+$header_inset: ($header_height - $logo_height) / 2;
+
+/**
+ *
+ */
+.liner {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 $hs;
+	margin: 0 auto;
+}
+
+/**
+ *
+ */
+dl.info {
+	display: table;
+	> div {
+		display: table-row;
+		> dt, > dd {
+			display: table-cell;
+			padding: .125em;
+		}
+	}
+	dt {
+		font-size: 85%;
+		text-align: right;
+		&::after {
+			content: ":";
+		}
+	}
+}
+
+/**
+ *
+ */
+ul {
+	&.checker, &.list-checker {
+		list-style-type: "\f147";
+		::marker {
+			font-family: dashicons;
+		}
+		li {
+			margin: .5em 0;
+			padding-left: .25em;
+		}
+	}
+}
+
+/**
+ *
+ */
+#brand {
+	img {
+		width: auto;
+		height: $logo_height;
+		object-fit: cover;
+		vertical-align: bottom;
+	}
+}
+
+/**
+ *
+ */
+#site-title {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+/**
+ *
+ */
+#keyvis {
+	.liner {
+		padding: 0;
+	}
+}
+
+/**
+ *
+ */
+#tiara, #crown {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	padding: $header_inset 0;
+	&.rolled {
+		box-shadow: 0 $xs $xs 0 rgba(0,0,0,.15);
+	}
+	& + * {
+//		padding-top: $header_height;
+	}
+}
+
+/**
+ * -----------------------------
+ *	Responsives
+ * -----------------------------
+ */
+
+/**
+ *	larger than equal 640
+ */
+@media screen and (min-width: $bp_m) {
+	$header_inset: $header_inset * 1.5;
+	$header_height: ($header_inset * 2) + $logo_height;
+
+	.liner {
+		padding: 0 $us;
+	}
+
+	/**
+	 *
+	 */
+	#tiara, #crown {
+		padding: $header_inset 0;
+		& + * {
+			padding-top: $header_height;
+		}
+	}
+}
+
+/**
+ *	larger than equal 1024
+ */
+@media screen and (min-width: $bp_l) {
+	$header_inset: $header_inset * 1.5;
+	$logo_height: $bs;
+	$header_height: ($header_inset * 2) + $logo_height;
+
+	#brand {
+		img {
+			height: $logo_height;
+		}
+	}
+
+	/**
+	 *
+	 */
+	#tiara, #crown {
+		& + * {
+			padding-top: $header_height;
+		}
+	}
+}
+
+/**
+ *	larger than equal 1440
+ */
+@media screen and (min-width: $bp_v) {
+	.liner {
+		width: $bp_v;
+	}
+}
+
+/**
+ *
+ */
+
+/**
+ * -----------------------------
+ *	
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+
+//[EOF]*/

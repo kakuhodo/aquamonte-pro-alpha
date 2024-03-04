@@ -1,0 +1,66 @@
+/**
+ * @file
+ *	Exhaust - a sassy cascading style sheet
+ *	Killing the default styles. Based on Cosmic 4.0.4, authored by Hikaru Tamaki.
+ *	NOTE!	- just kill, don't bear
+ *	@author	Jean-Pierre Fukuyama
+ *	@package	AquaMonte
+ */
+
+/**
+ *
+ */
+address, article, aside, blockquote, body, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, html, legend, main, nav, ol, p, pre, section, ul {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+ *
+ */
+fieldset, img {
+	border: 0;
+}
+
+/**
+ *
+ */
+img {
+	padding: 0;
+}
+
+/**
+ *
+ */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ *
+ *
+button {
+	@include appearance(none);
+}
+
+/**
+ *
+ *
+* {
+//	font-size: inherit;
+//	line-height: inherit;
+}
+
+
+/**
+ * -----------------------------
+ *	
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+
+//[EOF]*/

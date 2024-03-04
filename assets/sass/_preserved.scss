@@ -1,0 +1,143 @@
+/**
+ * @file
+ *	Preserved - a sassy cascading style sheet
+ *	
+ *	Variables, Mixins ...
+ *	@author	Hikaru Tamaki
+ *	@package	AquaMonte
+ */
+
+/**
+ * -----------------------------
+ *	Sizes
+ * -----------------------------
+ */
+$us: 16px;		// unit size
+$bs: $us * 2;
+$ts: $us * 3;
+$qs: $us * 4;
+$hs: $us * .5;
+$xs: $us * .25;
+
+$bp_m: $qs * 10;		// 640
+$bp_l: $qs * 16;		// 1024
+$bp_v: $bs * 45;		// 1440
+
+/**
+ * -----------------------------
+ *	Fonts
+ * -----------------------------
+ */
+$serif: serif;
+$sans: sans-serif;
+
+$icons: (
+	fa: "FontAwesome",
+);
+
+$g_win: "Meiryo", "MS PGothic";
+$g_mac: "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro";
+$g_mac_v: "Hiragino Sans";
+$g_axis: "Axis Std";
+$g_adobe: "Kozuka Gothic Pr6N", "Kozuka Gothic Pro";
+$g_yu: "YuGothic", "Yu Gothic";
+$g_lat: "Helvetica Neue", helvetica, arial;
+$g_google: "Open Sans";
+
+$goth_varius: $g_mac_v, $g_axis, $g_google, $g_adobe;
+$goth_snob: $g_yu, $g_axis;
+
+$goth_mac: $g_mac_v, $g_mac;
+$goth_os: $goth_mac, $g_win, $sans;
+$goth: $g_lat, $goth_os;
+
+$sans_varius: $g_lat, $goth_varius, $sans;
+$sans_snob: $goth_snob, $g_lat, $goth_os;
+
+$m_win: "MS PMincho";
+$m_mac: "Hiragino Mincho ProN";
+$m_adobe: "Kozuka Mincho Pr6N", "Kozuka Mincho Pro";
+$m_yu: "YuMincho", "Yu Mincho";
+$m_lat: "Garamond", "Century", "Times New Roman", times;
+
+$min_os: $m_mac, $m_win, $serif;
+$min: $m_lat, $min_os;
+
+$serif_varius: $m_lat, $m_adobe, $min_os;
+$serif_snob: $m_lat, $m_yu, $min_os;
+
+$fonts: $goth;
+
+/**
+ * -----------------------------
+ *	Colours
+ * -----------------------------
+ */
+
+$ntc: (		// Nippon traditional colors
+	ruri:		#005CAF,
+	moegi:		#7BA23F,
+	kuwacha:	#C99833,
+	ginnezumi:	#91989F,
+	tsuyukusa:	#2EA9DF,
+	beniukon:	#E98B2A,
+	kurenai:	#CB1B45,
+	yamabuki:	#FFB11B,
+);
+
+$ntc_uis: (		// Nippon traditional colors
+	principal:	map-get($ntc, ruri),		// Ruri
+	welldone:	map-get($ntc, moegi),		// Moegi
+	featured:	map-get($ntc, kuwacha),		// Kuwacha
+	notice:		map-get($ntc, ginnezumi),		// Ginnezumi
+	attention:	map-get($ntc, tsuyukusa),		// Tsuyukusa
+	caution:	map-get($ntc, beniukon),		// Beniukon
+	warning:	map-get($ntc, kurenai),		// Kurenai
+//	emergency:
+);
+
+$signs: (
+	principal:	"\f0a3",		// 
+	welldone:	"\f00c",		// 
+	featured:	"\f02e",
+	notice:		"\f0eb",
+	attention:	"\f05a",		// 
+	caution:	"\f06a",		// 
+	warning:	"\f071",		// 
+);
+
+$gsc: (		// Google standard colors
+	principal:	#2196f3,
+	welldone:	#4caf50,
+	attention:	#00bcd4,
+	caution:	#ff9800,
+	warning:	#e91e63,
+);
+
+$uics: (
+	here:	#fff,
+	hover:	#fff,
+	active:	#fff,
+);
+
+$grey: #696969;
+
+$cardinal: #333;
+
+$markers: (
+	pink:	rgba(255,0,255,.11),
+	yellow:	rgba(255,255,0,.11),
+	green:	rgba(0,255,0,.11),
+);
+
+/**
+ * -----------------------------
+ *	
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+
+//[EOF]*/

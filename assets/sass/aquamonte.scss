@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+/**
+ * -----------------------------
+ *	Masterpiece
+ * -----------------------------
+ */
+
+@import "compass";
+
+/**
+ * -----------------------------
+ *	Production portions
+ * -----------------------------
+ */
+
+@import "exhaust";		// initialiser
+@import "preserved";	// vars and mixins
+
+/**
+ *
+ */
+$logo_height: $us * 1.5;
+$header_height: $logo_height + $us;
+
+@import "elemental";	// HTML
+@import "majestic";		// grand design
+
+/**
+ *
+ */
+html {
+	font-family: $fonts;
+}
+
+/**
+ *
+ */
+.test {
+	@include border-radius;
+}
+
+/**
+ *
+ *
+body {
+	margin: 0;
+}
+
+/**
+ *
+ */
+.hentry {
+	img {
+		height: auto;
+	}
+}
+
+/**
+ *
+ */
+#wp-custom-header {
+	img {
+		object-fit: cover;
+		height: $qs * 2;
+		width: 100%;
+		vertical-align: middle;
+	}
+}
+
+/**
+ *
+ */
+.--liner {
+	width: 100%;
+	box-sizing: border-box;
+	padding: $hs;
+}
+
+/**
+ * -----------------------------
+ *	Responsives
+ * -----------------------------
+ */
+
+/**
+ *	larger than equal 640
+ */
+@media screen and (min-width: $bp_m) {
+	#wp-custom-header {
+		img {
+			height: $qs * 3;
+		}
+	}
+}
+
+/**
+ *	larger than equal 1024
+ */
+@media screen and (min-width: $bp_l) {
+	#wp-custom-header {
+		img {
+			height: $qs * 4;
+		}
+	}
+}
+
+/**
+ *	larger than equal 1440
+ */
+@media screen and (min-width: $bp_v) {
+	#wp-custom-header {
+		img {
+			height: $qs * 5;
+		}
+	}
+}
+
+/**
+ * -----------------------------
+ *	
+ * -----------------------------
+ */
+
+/**
+ *
+ */
+
+//[EOF]*/
