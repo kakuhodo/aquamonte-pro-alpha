@@ -8,6 +8,10 @@
         "css": "assets/styles",
         "js": "assets/scripts"
     },
-    "dum_number": 369,
+    "fontawesome": {
+        "id": "158897db51",
+        "front": false,
+        "admin": true
+    },
     "dum_str": "this is dummy"
 }
