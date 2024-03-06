@@ -13,5 +13,9 @@
         "front": false,
         "admin": true
     },
+    "front_use": {
+        "jquery": true,
+        "dashicons": true
+    },
     "dum_str": "this is dummy"
 }
