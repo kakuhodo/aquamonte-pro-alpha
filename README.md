@@ -17,3 +17,6 @@ ver. 0.9.x
 | version | updated | memo |
 |:---:|:---:|---|
 | 0.9.0 | 2024-01-31 | Introducing concept _Trinity_ |
+
+## Notes
+- info は、子テーマでは自身の WP_Theme (内部に parent のオブジェクトを保有) となるため、取得する世代について要調整。

@@ -1,90 +1,90 @@
 /**
  * @file
- *	Elemental - a sassy cascading style sheet
- *	
- *	Elements of HTML
- *	@author	Hikaru Tamaki
- *	@package	AquaMonte
+ *    Elemental - a sassy cascading style sheet
+ *    
+ *    Elements of HTML
+ *    @author    Hikaru Tamaki
+ *    @package    AquaMonte
  */
 
 /**
  *
  */
 html {
-	font-size: $us;
+    font-size: 16px;
 }
 
 /**
  *
  */
 body {
-	> main, > aside, > footer {
-		padding: 2em 0;
-	}
+    > main, > aside, > footer {
+        padding: 2rem 0;
+    }
 }
 
 /**
  *
  */
 pre, code {
-	font-family: Consolas, Monaco, MonacoRegular, "Courier New", monospace;
+    font-family: Consolas, Monaco, MonacoRegular, "Courier New", monospace;
 }
 
 /**
  *
  */
 nav {
-	> ul {
-		list-style-type: none;
-	}
-	a {
-		text-decoration: none;
-	}
+    > ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
 }
 
 /**
  *
  *
 ::marker {
-	vertical-align: middle;
+    vertical-align: middle;
 }
 
 /**
  * -----------------------------
- *	Responsive
+ *    Responsive
  * -----------------------------
  */
 
 /**
- *	larger than equal 640
+ *    larger than equal 640
  */
 @media screen and (min-width: $bp_m) {
 }
 
 /**
- *	larger than equal 1024
+ *    larger than equal 1024
  */
 @media screen and (min-width: $bp_l) {
 
-	/**
-	 *
-	 */
-	nav {
-		> ul {
-			display: flex;
-			align-items: center;
-			li {
-				+ li {
-					margin-left: 1em;
-				}
-			}
-		}
-	}
+    /**
+     *
+     */
+    nav {
+        > ul {
+            display: flex;
+            align-items: center;
+            li {
+                + li {
+                    margin-left: 1em;
+                }
+            }
+        }
+    }
 }
 
 /**
  * -----------------------------
- *	
+ *    
  * -----------------------------
  */
 

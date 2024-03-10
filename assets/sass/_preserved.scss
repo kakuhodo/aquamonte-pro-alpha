@@ -1,38 +1,38 @@
 /**
  * @file
- *	Preserved - a sassy cascading style sheet
- *	
- *	Variables, Mixins ...
- *	@author	Hikaru Tamaki
- *	@package	AquaMonte
+ *    Preserved - a sassy cascading style sheet
+ *    
+ *    Variables, Mixins ...
+ *    @author    Hikaru Tamaki
+ *    @package    AquaMonte
  */
 
 /**
  * -----------------------------
- *	Sizes
+ *    Sizes
  * -----------------------------
  */
-$us: 16px;		// unit size
+$us: 16px;        // unit size
 $bs: $us * 2;
 $ts: $us * 3;
 $qs: $us * 4;
 $hs: $us * .5;
 $xs: $us * .25;
 
-$bp_m: $qs * 10;		// 640
-$bp_l: $qs * 16;		// 1024
-$bp_v: $bs * 45;		// 1440
+$bp_m: $qs * 10;        // 640
+$bp_l: $qs * 16;        // 1024
+$bp_v: $bs * 45;        // 1440
 
 /**
  * -----------------------------
- *	Fonts
+ *    Fonts
  * -----------------------------
  */
 $serif: serif;
 $sans: sans-serif;
 
 $icons: (
-	fa: "FontAwesome",
+    fa: "FontAwesome",
 );
 
 $g_win: "Meiryo", "MS PGothic";
@@ -70,54 +70,54 @@ $fonts: $goth;
 
 /**
  * -----------------------------
- *	Colours
+ *    Colours
  * -----------------------------
  */
 
-$ntc: (		// Nippon traditional colors
-	ruri:		#005CAF,
-	moegi:		#7BA23F,
-	kuwacha:	#C99833,
-	ginnezumi:	#91989F,
-	tsuyukusa:	#2EA9DF,
-	beniukon:	#E98B2A,
-	kurenai:	#CB1B45,
-	yamabuki:	#FFB11B,
+$ntc: (        // Nippon traditional colors
+    ruri:        #005CAF,
+    moegi:        #7BA23F,
+    kuwacha:    #C99833,
+    ginnezumi:    #91989F,
+    tsuyukusa:    #2EA9DF,
+    beniukon:    #E98B2A,
+    kurenai:    #CB1B45,
+    yamabuki:    #FFB11B,
 );
 
-$ntc_uis: (		// Nippon traditional colors
-	principal:	map-get($ntc, ruri),		// Ruri
-	welldone:	map-get($ntc, moegi),		// Moegi
-	featured:	map-get($ntc, kuwacha),		// Kuwacha
-	notice:		map-get($ntc, ginnezumi),		// Ginnezumi
-	attention:	map-get($ntc, tsuyukusa),		// Tsuyukusa
-	caution:	map-get($ntc, beniukon),		// Beniukon
-	warning:	map-get($ntc, kurenai),		// Kurenai
-//	emergency:
+$ntc_uis: (        // Nippon traditional colors
+    principal:    map-get($ntc, ruri),        // Ruri
+    welldone:    map-get($ntc, moegi),        // Moegi
+    featured:    map-get($ntc, kuwacha),        // Kuwacha
+    notice:        map-get($ntc, ginnezumi),        // Ginnezumi
+    attention:    map-get($ntc, tsuyukusa),        // Tsuyukusa
+    caution:    map-get($ntc, beniukon),        // Beniukon
+    warning:    map-get($ntc, kurenai),        // Kurenai
+//    emergency:
 );
 
 $signs: (
-	principal:	"\f0a3",		// 
-	welldone:	"\f00c",		// 
-	featured:	"\f02e",
-	notice:		"\f0eb",
-	attention:	"\f05a",		// 
-	caution:	"\f06a",		// 
-	warning:	"\f071",		// 
+    principal:    "\f0a3",        // 
+    welldone:    "\f00c",        // 
+    featured:    "\f02e",
+    notice:        "\f0eb",
+    attention:    "\f05a",        // 
+    caution:    "\f06a",        // 
+    warning:    "\f071",        // 
 );
 
-$gsc: (		// Google standard colors
-	principal:	#2196f3,
-	welldone:	#4caf50,
-	attention:	#00bcd4,
-	caution:	#ff9800,
-	warning:	#e91e63,
+$gsc: (        // Google standard colors
+    principal:    #2196f3,
+    welldone:    #4caf50,
+    attention:    #00bcd4,
+    caution:    #ff9800,
+    warning:    #e91e63,
 );
 
 $uics: (
-	here:	#fff,
-	hover:	#fff,
-	active:	#fff,
+    here:    #fff,
+    hover:    #fff,
+    active:    #fff,
 );
 
 $grey: #696969;
@@ -125,14 +125,16 @@ $grey: #696969;
 $cardinal: #333;
 
 $markers: (
-	pink:	rgba(255,0,255,.11),
-	yellow:	rgba(255,255,0,.11),
-	green:	rgba(0,255,0,.11),
+    pink:    rgba(255,0,255,.11),
+    yellow:    rgba(255,255,0,.11),
+    teal:   rgba(0,255,255,.11),
+    green:    rgba(0,255,0,.11),
+    blue:   rgba(0,0,255,.11),
 );
 
 /**
  * -----------------------------
- *	
+ *    
  * -----------------------------
  */
 

@@ -14,7 +14,7 @@
 <aside id="decker">
 <div class="liner">
 <h2 id="boiler-title"><a href="/"><span><?php bloginfo('name'); ?></span></a></h2>
-<?php aquamonte_nav_menu('boiler'); ?>
+<?php aqmtNavMenu('boiler'); ?>
 </div><!--//.liner-->
 </aside><!--//#decker-->
 
@@ -26,7 +26,7 @@
 </div><!--//#credit-->
 </footer><!--//#booty-->
 
-<?php wp_footer(); ?>
+<?php 
+wp_footer();
 
-</body>
-</html>
+get_template_part('templates/foot');

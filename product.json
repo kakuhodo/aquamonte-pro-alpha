@@ -1,5 +1,5 @@
 {
-    "prefix": "am",
+    "prefix": "aqmt",
     "dir": {
         "inc": "inclusions",
         "dist": "distributors",
@@ -10,12 +10,14 @@
     },
     "fontawesome": {
         "id": "158897db51",
-        "front": false,
+        "front": true,
         "admin": true
     },
     "front_use": {
         "jquery": true,
         "dashicons": true
     },
-    "dum_str": "this is dummy"
+    "dev_mode": true,
+    "layout": "solo",
+    "_dummy": "this is a dummy"
 }

@@ -41,6 +41,15 @@ class Product extends Abs_Theme
 
     /**
      *
+     *
+    public function hookActionGetTemplatePart(string $slug, string $name, array $templates, array $args)
+    {
+        $templates[] = "templates/$slug.php";
+        $this->slap($templates);
+    }
+
+    /**
+     *
      */
 
     /**

@@ -25,13 +25,22 @@ define('PROD_TXD', 'aquamonte-pro-alpha');
  *
  */
 if (!class_exists('Pearlpuppy\CoCore\Awp\Abs_Theme')) {
-    add_action('admin_notices', 'amRequirements');
+    add_action('admin_notices', 'aqmtRequirements');
+} else {
+
+    /**
+     *
+     */
+    require_once('Product.php');
+    $aquamonte = new Pearlpuppy\AquaMonte\Product(__FILE__);
+    $aquamonte->hook();
+
 }
 
 /**
  *
  */
-function amRequirements()
+function aqmtRequirements()
 {
     echo '<div class="notice notice-error"><p>';
     _e('This theme requires <i>CoCore AWP</i>.');
@@ -47,28 +56,16 @@ function amRequirements()
 /**
  *
  */
-require_once('Product.php');
-$am = new Pearlpuppy\AquaMonte\Product(__FILE__);
-$am->hook();
 
 /**
  *
  */
 
 /**
- *
+ *  @since ver. 0.9.1 (edit. Quartz)
  */
-
-/**
- *
- */
-function aquamonte_nav_menu($slug) {
-    $args = array(
-        'menu' => $slug,
-        'container' => 'nav',
-        'container_id' => $slug,
-    );
-    wp_nav_menu($args);
+function aqmtNavMenu($slug) {
+    wp_nav_menu(['menu' => $slug]);
 }
 
 /**

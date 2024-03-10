@@ -5,11 +5,11 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package AquaMonte
- * @subpackage AquqMonte_bebe
- * @since AquaMonte 0.0
+ * @subpackage AquqMonte_Pro_Alpha
+ * @since AquaMonte 0.9.1
  */
 
-global $am;
+global $aquamonte;
 
 get_header();
 ?>
