@@ -20,3 +20,14 @@ ver. 0.9.x
 
 ## Notes
 - info は、子テーマでは自身の WP_Theme (内部に parent のオブジェクトを保有) となるため、取得する世代について要調整。
+
+## Substream studies
+### Info
+* そのまま子テーマの情報を取得
+* 親テーマの情報にアクセスしたい場合は、 `$info->parent`
+
+### Supports
+* デフォルトは親テーマの設定を**原則上書き(?)**
+
+### AWP Settings `product.json`
+* デフォルトは親テーマの設定を**原則上書き(?)**
