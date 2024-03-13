@@ -29,5 +29,5 @@ ver. 0.9.x
 ### Supports
 * デフォルトは親テーマの設定を**原則上書き(?)**
 
-### AWP Settings `product.json`
+### AWP Settings
 * デフォルトは親テーマの設定を**原則上書き(?)**

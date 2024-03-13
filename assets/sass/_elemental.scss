@@ -18,8 +18,57 @@ html {
  *
  */
 body {
+    font-size: 1.25rem;
     > main, > aside, > footer {
         padding: 2rem 0;
+    }
+}
+
+/**
+ *
+ *
+p {
+    color: rgba(black, .85);
+}
+
+/**
+ *
+ *
+@for $i from 1 through 6 {
+    $n: 4 - $i;
+    @if $n < 0 {
+        $a: $n * 2 + 24;
+    h#{$i} {
+        font-size: $a * .05rem;
+    }
+    } @else {
+        $a: $n * 5 + 25;
+    h#{$i} {
+        font-size: $a * .05rem;
+    }
+    }
+}
+
+/**
+ *  Golden ratio of heading font size
+ */
+@for $i from 1 through 6 {
+    $n: 7 - $i;
+    $q: ceil($n / 2) + 1;
+    $p: round($i / 9) - ($n % 2) + 8;
+    h#{$i} {
+        font-size: $p * $q * .0625rem;
+        /**
+         *      P   Q
+         *  h1: 8 * 4 = 32
+         *  h2: 7 * 4 = 28
+         *  h3: 8 * 3 = 24
+         *  h4: 7 * 3 = 21
+         *  h5: 9 * 2 = 18
+         *  h6: 8 * 2 = 16
+         *  ---
+         *  0.0625 = 1 / 16
+         */
     }
 }
 
@@ -34,13 +83,56 @@ pre, code {
  *
  */
 nav {
-    > ul {
+    ul, ol {
+        display: flex;
+        gap: 1rem;
         list-style-type: none;
+        margin: 0;
     }
     a {
         text-decoration: none;
     }
 }
+
+/**
+ *
+ */
+article {
+    color: rgba(black, .85);
+    * {
+        color: inherit;
+    }
+    p {
+        line-height: 1.67em;
+        margin: .5em 0;
+    }
+    @for $i from 1 through 6 {
+        h#{$i} {
+            margin: 1em 0;
+        }
+    }
+    ul, ol {
+        margin: 1em 0 1em 1em;
+    }
+    table {
+        width: 100%;
+        margin: 1em 0;
+    }
+    td, th {
+        padding: .5em;
+    }
+    tr:nth-child(even) {
+        background: rgba(black, .05);
+    }
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
 
 /**
  *

@@ -2,7 +2,7 @@
 
 /**
  * -----------------------------
- *	Masterpiece
+ *    Masterpiece
  * -----------------------------
  */
 
@@ -10,12 +10,13 @@
 
 /**
  * -----------------------------
- *	Production portions
+ *    Production portions
  * -----------------------------
  */
 
-@import "exhaust";		// initialiser
-@import "preserved";	// vars and mixins
+@import "exhaust";          // initialiser
+@import "preservers";       // vars and mixins
+@import "principles";       // definitions
 
 /**
  *
@@ -23,102 +24,103 @@
 $logo_height: $us * 1.5;
 $header_height: $logo_height + $us;
 
-@import "elemental";	// HTML
-@import "majestic";		// grand design
+@import "elemental";        // HTML
+@import "majestic";         // grand design
 
 /**
  *
  */
 html {
-	font-family: $fonts;
+    font-family: $fonts;
+    background: #696969;
+}
+
+/**
+ *
+ *
+.test {
+    @include border-radius;
 }
 
 /**
  *
  */
-.test {
-	@include border-radius;
-}
-
-/**
- *
- *
 body {
-	margin: 0;
+    background: white;
 }
 
 /**
  *
  */
 .hentry {
-	img {
-		height: auto;
-	}
+    img {
+        height: auto;
+    }
 }
 
 /**
  *
  */
 #wp-custom-header {
-	img {
-		object-fit: cover;
-		height: $qs * 2;
-		width: 100%;
-		vertical-align: middle;
-	}
+    img {
+        object-fit: cover;
+        height: $qs * 2;
+        width: 100%;
+        vertical-align: middle;
+    }
 }
 
 /**
  *
  */
 .--liner {
-	width: 100%;
-	box-sizing: border-box;
-	padding: $hs;
+    width: 100%;
+    box-sizing: border-box;
+    padding: $hs;
 }
 
 /**
  * -----------------------------
- *	Responsives
+ *    Responsives
  * -----------------------------
  */
 
 /**
- *	larger than equal 640
+ *    larger than equal 640
  */
-@media screen and (min-width: $bp_m) {
-	#wp-custom-header {
-		img {
-			height: $qs * 3;
-		}
-	}
+@media screen and (min-width: $breaker_s) {
+    #wp-custom-header {
+        img {
+            height: $qs * 3;
+        }
+    }
 }
 
 /**
- *	larger than equal 1024
+ *    larger than equal 1024
  */
-@media screen and (min-width: $bp_l) {
-	#wp-custom-header {
-		img {
-			height: $qs * 4;
-		}
-	}
+@media screen and (min-width: $breaker_m) {
+    #wp-custom-header {
+        img {
+            height: $qs * 4;
+        }
+    }
 }
 
 /**
- *	larger than equal 1440
+ *    larger than equal 1440
  */
-@media screen and (min-width: $bp_v) {
-	#wp-custom-header {
-		img {
-			height: $qs * 5;
-		}
-	}
+@media screen and (min-width: $breaker_max) {
+    #wp-custom-header {
+        img {
+            height: $qs * 5;
+        }
+    }
 }
 
 /**
  * -----------------------------
- *	
+ *    
  * -----------------------------
  */
 

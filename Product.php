@@ -41,11 +41,23 @@ class Product extends Abs_Theme
 
     /**
      *
-     *
-    public function hookActionGetTemplatePart(string $slug, string $name, array $templates, array $args)
+     */
+    public function aqmtFilterBodyClass(array $classes, array $css_class)
     {
-        $templates[] = "templates/$slug.php";
-        $this->slap($templates);
+        global $post;
+        switch ($post->post_name) {
+            case 'duo':
+            case 'dash':
+                if (in_array('layout-solo', $classes)) {
+                    $key = array_search('layout-solo', $classes);
+                    unset($classes[$key]);
+                    $classes[] = 'layout-' . $post->post_name;
+                }
+                break;
+            default:
+                break;
+        }
+        return $classes;
     }
 
     /**

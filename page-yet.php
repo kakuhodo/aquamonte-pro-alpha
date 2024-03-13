@@ -1,8 +1,7 @@
 <?php
 /**
- * The Initial template
+ *  Template Name: Yet
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package AquaMonte
  * @subpackage AquqMonte_Pro_Alpha

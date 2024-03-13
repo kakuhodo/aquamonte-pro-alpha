@@ -23,6 +23,10 @@ $bp_m: $qs * 10;        // 640
 $bp_l: $qs * 16;        // 1024
 $bp_v: $bs * 45;        // 1440
 
+$breaker_s: $bp_m;
+$breaker_m: $bp_l;
+$breaker_max: $bp_v;
+
 /**
  * -----------------------------
  *    Fonts

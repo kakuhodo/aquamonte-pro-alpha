@@ -1,61 +1,62 @@
 /**
- * @file
- *	Exhaust - a sassy cascading style sheet
- *	Killing the default styles. Based on Cosmic 4.0.4, authored by Hikaru Tamaki.
- *	NOTE!	- just kill, don't bear
- *	@author	Jean-Pierre Fukuyama
- *	@package	AquaMonte
+ *  @file   Exhaust
+ *      A sassy cascading style sheet
+ *      Killing the default styles. Based on Cosmic 4.0.4, authored by Hikaru Tamaki.
+ *  NOTE!    - just kill, don't bear
+ *  @author    Jean-Pierre Fukuyama
+ *  @package    AquaMonte
+ *  @since 2010-02-13
  */
 
 /**
- *
+ *  @update ver. 0.9.1 (edit. Quartz)
  */
-address, article, aside, blockquote, body, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, html, legend, main, nav, ol, p, pre, section, ul {
-	margin: 0;
-	padding: 0;
+address, article, aside, blockquote, body, dd, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hr, html, legend, main, menu, nav, ol, p, pre, section, ul {
+    margin: 0;
+    padding: 0;
 }
 
 /**
  *
  */
 fieldset, img {
-	border: 0;
+    border: 0;
 }
 
 /**
  *
  */
 img {
-	padding: 0;
+    padding: 0;
 }
 
 /**
  *
  */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /**
  *
  *
 button {
-	@include appearance(none);
+    @include appearance(none);
 }
 
 /**
  *
  *
 * {
-//	font-size: inherit;
-//	line-height: inherit;
+//    font-size: inherit;
+//    line-height: inherit;
 }
 
 
 /**
  * -----------------------------
- *	
+ *    
  * -----------------------------
  */
 
