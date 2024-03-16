@@ -26,13 +26,13 @@ $header_height: $logo_height + $us;
 
 @import "elemental";        // HTML
 @import "majestic";         // grand design
+@import "colours";          // master colours
 
 /**
  *
  */
 html {
     font-family: $fonts;
-    background: #696969;
 }
 
 /**
@@ -40,13 +40,6 @@ html {
  *
 .test {
     @include border-radius;
-}
-
-/**
- *
- */
-body {
-    background: white;
 }
 
 /**
@@ -78,6 +71,24 @@ body {
     box-sizing: border-box;
     padding: $hs;
 }
+
+/**
+ *
+ */
+#brand {
+    svg {
+        fill: magenta;
+        width: 144px;
+    }
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
 
 /**
  * -----------------------------

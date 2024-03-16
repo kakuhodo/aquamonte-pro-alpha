@@ -1,5 +1,5 @@
 {
-    "prefix": "aqmt",
+    "prefix": "am",
     "dir": {
         "inc": "inclusions",
         "dist": "distributors",
@@ -8,6 +8,9 @@
         "css": "assets/styles",
         "js": "assets/scripts"
     },
+    "dev_mode": true,
+    "layout": "solo",
+    "theme_color": "#faabee",
     "fontawesome": {
         "id": "158897db51",
         "front": true,
@@ -17,7 +20,5 @@
         "jquery": true,
         "dashicons": true
     },
-    "dev_mode": true,
-    "layout": "solo",
     "_dummy": "this is a dummy"
 }

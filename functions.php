@@ -25,7 +25,7 @@ define('PROD_TXD', 'aquamonte-pro-alpha');
  *
  */
 if (!class_exists('Pearlpuppy\CoCore\Awp\Abs_Theme')) {
-    add_action('admin_notices', 'aqmtRequirements');
+    add_action('admin_notices', 'amRequirements');
 } else {
 
     /**
@@ -38,16 +38,6 @@ if (!class_exists('Pearlpuppy\CoCore\Awp\Abs_Theme')) {
 }
 
 /**
- *
- */
-function aqmtRequirements()
-{
-    echo '<div class="notice notice-error"><p>';
-    _e('This theme requires <i>CoCore AWP</i>.');
-    echo '</code></p></div>';
-}
-
-/**
  * ============================
  *  <<< END CHECK
  * ============================
@@ -56,17 +46,27 @@ function aqmtRequirements()
 /**
  *
  */
+function amRequirements()
+{
+    echo '<div class="notice notice-error"><p>';
+    printf(__('This theme requires %s.', PROD_TXD), '<i>CoCore AWP</i>');
+    echo '</p></div>';
+}
+
+/**
+ *  @since ver. 0.9.1 (edit. Quartz)
+ */
+function amNavMenu($slug) {
+    wp_nav_menu(['menu' => $slug]);
+}
 
 /**
  *
  */
 
 /**
- *  @since ver. 0.9.1 (edit. Quartz)
+ *
  */
-function aqmtNavMenu($slug) {
-    wp_nav_menu(['menu' => $slug]);
-}
 
 /**
  * -----------------------------

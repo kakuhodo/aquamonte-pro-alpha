@@ -14,7 +14,7 @@
 <aside id="decker">
 <div class="liner">
 <h2 id="boiler-title"><a href="/"><span><?php bloginfo('name'); ?></span></a></h2>
-<?php aqmtNavMenu('boiler'); ?>
+<?php amNavMenu('boiler'); ?>
 </div><!--//.liner-->
 </aside><!--//#decker-->
 

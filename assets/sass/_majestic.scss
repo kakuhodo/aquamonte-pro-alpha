@@ -14,13 +14,16 @@ $header_inset: ($header_height - $logo_height) / 2;
  */
 .mode-dev {
     > header, > footer {
-        background: rgba(yellow, .15);
+        // background: rgba(yellow, .15);
     }
     section {
-        background: rgba(greenyellow, .15);
+    //     background: rgba(greenyellow, .15);
     }
     .liner {
-        background: rgba(cyan, .15);
+    //     background: rgba(cyan, .15);
+    }
+    #gnb {
+        // background: purple;
     }
 }
 
@@ -76,6 +79,7 @@ ul {
  *
  */
 #brand {
+    font-size: 1rem;
     img {
         width: auto;
         height: $logo_height;
@@ -128,7 +132,7 @@ ul {
             padding-bottom: 2rem;
             &:nth-child(even) {
                 color: white;
-                background: rgba(purple, .85);
+                background: rgba(purple, .87);
             }
         }
     }
@@ -136,6 +140,62 @@ ul {
         @extend .liner;
     }
 }
+
+/**
+ *
+ */
+#burger {
+    display: none;
+}
+
+/**
+ *
+ */
+#gnb {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    > label {
+        &::before {
+            @include faSolid;
+            content: "\f0c9";
+        }
+        i {
+            display: none;
+        }
+        & + ul {
+            display: none;
+        }
+        &:has(:checked) {
+            &::before {
+                content: "\f107";
+            }
+            & + ul {
+                display: block;
+            }
+        } 
+    }
+    > ul {
+        > li {
+            > a {
+                display: block;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+/**
+ *
+ */
+
+/**
+ *
+ */
 
 /**
  *

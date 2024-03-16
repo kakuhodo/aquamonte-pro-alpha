@@ -42,7 +42,7 @@ class Product extends Abs_Theme
     /**
      *
      */
-    public function aqmtFilterBodyClass(array $classes, array $css_class)
+    public function amFilterBodyClass(array $classes, array $css_class)
     {
         global $post;
         switch ($post->post_name) {

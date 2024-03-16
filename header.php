@@ -11,11 +11,6 @@
 
 get_template_part('templates/head');
 
-$hh = 'div';
-if (is_front_page()) {
-	$hh = 'h1';
-}
-
 ?>
 
 <body <?php body_class(); ?>>
@@ -23,11 +18,10 @@ if (is_front_page()) {
 
 <header id="tiara">
 <div class="liner">
-<div id="brand">
-<<?php echo $hh; ?> id="site-title"><a href="/"><?php bloginfo('name'); ?></a></<?php echo $hh; ?>><!--//#site-title-->
-<a class="triumph" href="/"><?php #aquamonte_logo(); ?></a><!--//.triumph-->
-</div><!--//#brand-->
-<?php aqmtNavMenu('gnb'); ?>
+
+<?php get_template_part('templates/brand'); ?>
+
+<?php amNavMenu('gnb'); ?>
 </div><!--//.liner-->
 </header><!--//#crown-->
 
@@ -38,12 +32,17 @@ if (is_front_page()) {
 <?php endif; ?>
 
 <?php
+
 /**
  *
+ */
+
+/**
  *
-?>
-<pre style="background:#eee">Deb: 
-<?php print_r($GLOBALS['wp_styles']->registered); ?>
-</pre>
+ */
+
+/**
+ *
+ */
 
 //[EOF]*/
